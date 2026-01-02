@@ -51,10 +51,23 @@
   <p class="heart">💖 3rd January 💖</p>
 
   <!-- MUSIC -->
-  <audio id="music" loop>
-    <source src="song.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+  <audio id="music" controls>
+  <source src="song.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<br><br>
+
+<button onclick="playMusic()">▶ Play Our Song</button>
+
+<script>
+  function playMusic() {
+    const audio = document.getElementById("music");
+    audio.volume = 0.7;
+    audio.play();
+  }
+</script>
+
 
   <button onclick="playMusic()">▶ Play Our Song</button>
 
